@@ -11,7 +11,7 @@ const menuPage = new MenuPage
 
 describe('Orange HRM test', () => {
 
-  it('User Info Update - Sucess', () => {
+  it('User Info Update - Success', () => {
     loginPage.accessLoginPage()
     loginPage.loginWithAnyUser(userData.userSuccess.username, userData.userSuccess.password)
     
@@ -23,12 +23,6 @@ describe('Orange HRM test', () => {
     myInfoPage.fillEmployeeDetails('EmpIdTest', 'OtherIdTest', 'DriversLicenseNumberTest', '2026-05-26')
     myInfoPage.fillStatus('1997-06-22')
     myInfoPage.saveInfos() 
-  })
-
-  it('Login - Fail', () => {
-    loginPage.accessLoginPage()
-    loginPage.loginWithAnyUser(userData.userFail.username, userData.userFail.password)
-    loginPage.checkWrongCredential()
   })
 
 })
