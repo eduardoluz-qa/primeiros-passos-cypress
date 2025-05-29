@@ -8,13 +8,13 @@ npm install
 ```
 >**NOTE**
 >
->It is necessary to have **node** installed
+>It is necessary to have **node** installed.
 
-##Running
+## Running
 ```bash
-# You open the Cypress UI
+# You open the Cypress UI.
 npx cypress open
 
-# Run the automation by command line
+# Run the automation by command line.
 npx cypress run
 ```
